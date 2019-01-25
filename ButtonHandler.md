@@ -1,5 +1,5 @@
 
-Handle the various buttons on the main CSV import screen
+Handle the various buttons on the main CSV import screen.
 
 ``` C#
 
