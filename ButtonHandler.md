@@ -1,4 +1,6 @@
 
+Handle the various buttons on the main CSV import screen
+
 ``` C#
 
 using System;
@@ -131,12 +133,12 @@ namespace ImpPrototype
             cbCredit.DropDownStyle = ComboBoxStyle.DropDownList ;
             btnSave.Enabled = false ;
 
-            //m_sCompID = "SNR3979" ;
-            //m_sCompID = "SNR6956";  // <-- Hammond property (Test Import Company)
-            //m_keyPart = "ZGfaC2nJm1awEx+i3Z+FzfIFr3nho9Rw+KwW4CedaEhF6hqpe1k4najkBj37c7kUW9f4lXirBQZSfTK6YPqwCsDFwZTJMABjmBp7PN+zCOB8EV44jclVIX6PyUve9h2t";
-            //m_keyUser = "8KYbmseEdiDxCJU8+9VxsbgRjQFPkYDcJ9kAjMocYr4WqDFm3SJWmYTBUMqO5RTaAWGG6R7L3+JFp/qQmkY5Fb6J5wiVnDhO6Zwz02o4tDADg1JKf+3gi4Oc0Awa3ZnPhNYEmPxaOTLtRPVIu8vmwe7hZXlL3DYbHqBhjFTBvP/4AyQjlXZpIviUu3/wNPsH" ;
+            //m_sCompID = "SNR3" ;
+            //m_sCompID = "SNR6";  // <-- Hammond property (Test Import Company)
+            //m_keyPart = "ZGfaC2nJm1awEx+i3Z+Fzf.....";
+            //m_keyUser = "8KYbmseEdiDxCJU8+9VxsbgRjQFPkYDcJ9kAjMocY...." ;
             // Hammond property (Test Import Company)
-            //m_keyUser = "8KYbmseEdiDxCJU8+9VxsbgRjQFPkYDcJ9kAjMocYr4WqDFm3SJWmYTBUMqO5RTaVATvSHxTmFGl46+W5FVcKJmeNffcPbNrNj7ANEm/EoUwGdK7kkdmjPMYhmofjUrWKEpr7SlNPdK6JnkCa+77vdclf2+Rne6njE4NMKFu1gyP652/QZcvpcow+aJYiiQM";
+            //m_keyUser = "8KYbmseEdiDxCJU8+9VxsbgRjQFP....";
 
             GetAPIkeys() ;
             if (AIQ_ChartOfAccts_etc())
@@ -152,9 +154,9 @@ namespace ImpPrototype
         private void GetAPIkeys()
         {
             m_APIkey.CompID  = "SNR6956" ;
-            m_APIkey.keyPart = "ZGfaC2nJm1awEx+i3Z+FzfIFr3nho9Rw+KwW4CedaEhF6hqpe1k4najkBj37c7kUW9f4lXirBQZSfTK6YPqwCsDFwZTJMABjmBp7PN+zCOB8EV44jclVIX6PyUve9h2t" ;
-            m_APIkey.keyUser = "8KYbmseEdiDxCJU8+9VxsbgRjQFPkYDcJ9kAjMocYr4WqDFm3SJWmYTBUMqO5RTaVATvSHxTmFGl46+W5FVcKJmeNffcPbNrNj7ANEm/EoUwGdK7kkdmjPMYhmofjUrWKEpr7SlNPdK6JnkCa+77vdclf2+Rne6njE4NMKFu1gyP652/QZcvpcow+aJYiiQM" ;
-            m_APIkey.CompName = "?" ;
+            m_APIkey.keyPart = "ZGfaC2nJm1awEx+i3Z+FzfIFr3nho9Rw+KwW4Ce..." ;
+            m_APIkey.keyUser = "8KYbmseEdiDxCJU8+9VxsbgRjQFPkYDcJ9kAjMocYr4WqDFm...." ;
+            m_APIkey.CompName = "..." ;
         }
 
         // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
