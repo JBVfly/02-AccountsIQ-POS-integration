@@ -1,3 +1,6 @@
+
+``` C#
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -948,3 +951,5 @@ journal.Lines = new GeneralJournalLine[]
     new GeneralJournalLine { GLAccountCode = "1105-00-000", Amount = -330.0M, Description = sDrCrDesc }   // "Sales posted by JV(POS)" },
     //new GeneralJournalLine { GLAccountCode = inCrAcct, Amount = dCrAmt, Description = sDrCrDesc }
 } ;  */
+
+```
